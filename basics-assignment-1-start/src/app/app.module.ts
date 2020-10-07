@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { NeutralAlertComponent } from './neutral-alert/neutral-alert.component'
-import { ColorfulAlertComponent } from './colorful-alert/colorful-alert.component'
+import { ColorfulAlertComponent } from './colorful-alert/colorful-alert.component';
+import { AlertsComponent } from './alerts/alerts.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ColorfulAlertComponent } from './colorful-alert/colorful-alert.componen
     WarningAlertComponent,
     SuccessAlertComponent,
     NeutralAlertComponent,
-    ColorfulAlertComponent
+    ColorfulAlertComponent,
+    AlertsComponent
   ],
   imports: [
     BrowserModule,
