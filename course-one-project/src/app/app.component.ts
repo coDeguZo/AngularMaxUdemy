@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  secret:boolean = false
-  clicks: number[] = []
-
-  pushClicks() {
-    return this.clicks.push(this.clicks.length + 1)
-  }
+  title = 'course-one-project';
 }

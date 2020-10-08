@@ -12,17 +12,15 @@
   </div>
 </div>
 
-<br/>
-<br>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <button class="btn btn-primary"(click)="onToggleDisplay()">Display Details</button>
-      <p *ngIf="showSecret">{{ secretPassword }}</p>
-      <div *ngFor="let logItem of log" 
-      [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
-      [ngClass]="{'white-text': logItem >= 5}"
-      >{{ logItem }}</div>
+      <button (click)="secret = !secret" (click)="pushClicks()">Display Details</button>
+      <p *ngIf="secret">Secret Password = tuna</p>
+      <p *ngFor="let click of clicks"
+         [ngStyle]="{backgroundColor: click >= 5 ? 'blue' : 'white'}"
+         [ngClass]="{'blue-background-text': click >= 5}"
+      >{{click}}</p>
     </div>
   </div>
 </div>
